@@ -15,7 +15,7 @@ import ventasCFRoutes from './src/routes/ventasCF.routes.js';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3307;
+const PORT = process.env.PORT || 3306;
 
 app.use(cors());
 app.use(express.json());
@@ -32,5 +32,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`✅ Servidor corriendo en http://192.168.1.7:${PORT}`);
 });

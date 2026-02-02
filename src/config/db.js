@@ -4,11 +4,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const pool = createPool({
-    host: process.env.DB_HOST || 'localhost',
+    host: process.env.DB_HOST || '192.168.1.7',
     user: process.env.DB_USER || 'mayli_dev',
     password: process.env.DB_PASSWORD || 'coreasuno',
     database: process.env.DB_NAME || 'declaracion_renta_db',
-    port: process.env.DB_PORT || 3307,
+    port: process.env.DB_PORT || 3306,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
